@@ -1,0 +1,108 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background-fon {
+  background-color: transparent;
+  background-image: url("/img/TOP.png");
+  height: 60em;
+  /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */
+  background-position: center center;
+  /* Фон не повторяется */
+  background-repeat: no-repeat;
+  /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+  background-attachment: scroll;
+  /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+  background-size: cover;
+  /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
+  background-color: #464646;
+}
+
+.body1 {
+  margin: 0;
+  padding: 0 0 10em 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  font-family: "Gochi Hand", cursive;
+  position: relative;
+  color: #ca0404;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 50px;
+  letter-spacing: 3px;
+  overflow: hidden;
+  padding: 2% 5%;
+  cursor: pointer;
+  border: none;
+  transition: 0.6s ease;
+}
+
+button:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ff1b1b;
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px #ff1b1b, 0 0 40px #ff1b1b, 0 0 80px #ff1b1b;
+}
+
+button:hover span:nth-child(1) {
+  left: 100%;
+}
+
+button:hover span:nth-child(2) {
+  top: 100%;
+}
+
+button:hover span:nth-child(3) {
+  right: 100%;
+}
+
+button:hover span:nth-child(4) {
+  bottom: 100%;
+}
+
+button span {
+  display: block;
+  position: absolute;
+  transition: 0.6s ease;
+}
+
+button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(45deg, transparent, #ff1b1b);
+  transition-delay: 0.25s;
+}
+
+button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #ff1b1b);
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(135deg, transparent, #ff1b1b);
+  transition-delay: 0.25s;
+}
+
+button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(0, transparent, #ff1b1b);
+} /*# sourceMappingURL=styleSCSS.css.map *//*# sourceMappingURL=style.css.map */
